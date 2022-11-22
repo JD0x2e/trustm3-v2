@@ -430,28 +430,68 @@ line-height: 11px;
         width: 124px;
         height: 180px;
     }
-        
-        .nft-img{
+    
+    .nft-img{
         width: 81px;
         height: 82px;
-        }
+    }
 
-        
-        .nft-tick{
+    
+    .nft-tick{
         width: 20px;
         height: 20px; 
-        }
-        
-        .nft-description-box{
+    }
+    
+    .nft-description-box{
         width: 124px;
         height: 53px;
-        }
-        
-        .nft-description{
+    }
+    
+    .nft-description{
         font-weight: 700;
         font-size: 12px;
         line-height: 11px;
-        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .loggedin-top {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .loggedin-bottom {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .nft-box{
+        width: 174px;
+        height: 210px;
+    }
+        
+    .nft-img{
+        width: 97px;
+        height: 98px;
+    }
+
+    
+    .nft-tick{
+        width: 23px;
+        height: 23px; 
+    }
+    
+    .nft-description-box{
+        width: 174px;
+        height: 67px;
+    }
+    
+    .nft-description{
+        margin-top: 1em;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 10px;
+    }
 
 }
 

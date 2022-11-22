@@ -66,7 +66,7 @@ import { useState } from "react";
         }  ,
       ])
 
-    if (!user?.isLoggedIn) {
+    if (user?.isLoggedIn) {
       return (
         <div className="landing-page-container">
           <div className="landing-page-top-half">
