@@ -12,7 +12,6 @@ import Pen from '../assets/pen.png';
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Image from "next/image";
 
 
 const JobDetails: NextPage = () => {
