@@ -1,0 +1,780 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap');
+
+body {
+background-image: url(../assets/bg-welcome.png);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #0c0d29;
+font-family: 'Archivo', sans-serif;
+color: #FFFFFF
+}
+
+/* TABLET SIZE */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../assets/bg-desktop.png);
+    }
+}
+
+/****************** 
+LANDING PAGE
+******************/
+.landing-page-container {
+    max-width: 100%;  
+    height: 100vh;
+    padding: 1.5em;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    margin-top: 2em;
+    width: 94px;
+    height: 92px;
+}
+
+.welcome-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    color: #FFFFFF;
+    font-style: normal;
+    width: 96%;
+}
+
+.welcome-text{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.welcome-text2{
+    font-weight: medium;
+    font-size: 19px;
+}
+
+.connect-wallet-btn {
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 1em;
+    margin-top: 8em;
+    text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+    .connect-wallet-btn {
+        width: 80%;
+    }
+    .landing-page-top-half {
+        padding-left: 2em !important;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .connect-wallet-btn {
+        width: 70%;
+    }
+    .landing-page-top-half {
+        padding-left: 3.5em !important;
+    }
+}
+
+/* TABLET SIZE */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../assets/bg-desktop.png);
+    }
+    .landing-page-top-half {
+        padding-left: 5em !important;
+    }
+    .welcome-text{
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 29px;
+    }
+    
+    .welcome-text2{
+        font-weight: medium;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .landing-page-top-half {
+        padding-left: 10em !important;
+    }
+    .logo{
+        width: 109px;
+        height: 100px;
+    }
+    .welcome-text-container {
+        margin-top: 6em;
+    }
+    .welcome-text{
+        font-size: 40px;
+    }
+    .welcome-text2{
+        font-size: 34px;
+    }
+    .connect-wallet-btn {
+        width: 30%;
+        font-size: 25px;
+        padding: 1.25em;
+    }
+}
+
+/**************
+LOGGED IN PAGE
+**************/
+
+.pt-8 {
+    padding-top: 3rem;
+}
+
+.bg-\[\#603DEB\] {
+    background-color: rgb(37, 14, 86);  
+}
+
+.nft-container {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 3em;
+    padding: 1em;
+    color: white;
+}
+
+.text-gray-700 {
+color: white !important;
+}
+
+.loggedin-page-container {
+    max-width: 100%;  
+    height: 100vh;
+    padding: 1.5em;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+.logout-container {
+    display: flex;   
+    justify-content: space-between;
+}
+
+.log-out-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+    
+.logout-icon{
+    transform: rotate(180deg);
+    height: 10px;
+    margin-right: 5px;
+}
+
+.loggedin-title{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 27px;
+    line-height: 29px;
+}
+
+.loggedin-gotocv-container{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 2em !important;
+}
+
+.gotocv-arrow {
+    height: 22px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.gotocv-text {
+    font-weight: 800;
+}
+
+.loggedin-headings {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+
+
+.job-description-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-description-container a {
+    padding-left: 0.3rem;
+}
+
+.job-search-input{
+width: 100%;
+height: 28px;
+background: rgba(255, 255, 255, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+padding: 1em;
+}
+
+.job-search-text{
+width: 62px;
+height: 16px;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 16px;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.nft-box{
+width: 104px;
+height: 143px;
+background: rgba(255, 255, 255, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(15px);
+border-radius: 20px;
+}
+
+.nft-img{
+width: 61px;
+height: 62px;
+border-radius: 100%;
+margin: 0 auto;
+}
+
+.nft-year{
+width: 100%;
+display: block;
+text-align: center;
+height: 11px;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 11px;
+}
+
+.nft-tick{
+width: 12px;
+height: 12px;
+border-radius: 100%;
+margin: 0 auto;
+margin-top: -5px !important;
+background-color: white;
+}
+
+.nft-description-box{
+width: 104px;
+height: 44.14px;
+background: rgba(255, 255, 255, 0.15);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(15px);
+border-radius: 15px;
+float: left;
+}
+
+.nft-description{
+width: 100%;
+display: block;
+text-align: center;
+height: 11px;
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 11px;
+}
+
+.nft-name{
+width: 100%;
+display: block;
+text-align: center;
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+}
+
+.nft-issuer{
+width: 100%;
+display: block;
+text-align: center;
+height: 11px;
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 11px;
+}
+
+@media screen and (min-width: 700px) {
+    .job-description-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .loggedin-page-container {
+        padding: 2em;
+    }
+    
+.nft-box{
+    width: 114px;
+    height: 160px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+}
+    
+    .nft-img{
+    width: 71px;
+    height: 72px;
+    border-radius: 100%;
+    margin: 0 auto;
+    }
+    
+    .nft-year{
+    padding-bottom: 2em; 
+    font-size: 12px;
+    }
+    
+    .nft-tick{
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: -5px !important;
+    background-color: white;
+    }
+    
+    .nft-description-box{
+    width: 114px;
+    height: 44.14px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    float: left;
+    }
+    
+    .nft-description{
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 11px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 11px;
+    }
+    
+    .nft-name{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    }
+    
+    .nft-issuer{
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 11px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 11px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .loggedin-top {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .loggedin-bottom {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .nft-box{
+        width: 124px;
+        height: 180px;
+    }
+        
+        .nft-img{
+        width: 81px;
+        height: 82px;
+        }
+
+        
+        .nft-tick{
+        width: 20px;
+        height: 20px; 
+        }
+        
+        .nft-description-box{
+        width: 124px;
+        height: 53px;
+        }
+        
+        .nft-description{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 11px;
+        }
+
+}
+
+/****************
+CV PAGE 
+****************/
+.cv-container {
+    padding-left: 1.5rem;
+    padding-top: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pt-99 {
+padding-top: 4em;
+}
+
+.return-arrow {
+transform: rotate(180deg);
+width: 34px;
+height: 19px;
+}
+
+.cv-logo-arrow {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5em;
+}
+
+.cv-content {
+margin-top: 4em;
+margin-left: 1.5em;
+}
+
+.my-cv-logo {
+width: 60px ;
+margin-left: 1.4em;
+}
+
+.my-cv-title-container {
+display: flex;
+align-items: center;
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 33px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.my-cv-title-logo {
+width: 30px;
+display: flex;
+margin-top: 0.3em;
+margin-left: 0.3em;
+}
+
+.my-cv-description {
+margin-top: 1em;
+width: 85%;
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 15px;
+color: #FFFFFF;
+}
+
+.cv-work-experience {
+margin-top: 1.25em;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+}
+
+.cv-jobskills-container {
+margin-top: 5em;
+}
+
+.cv-backcard {
+width: 100%;
+height: 100px;
+margin-top: 0.8em;
+background: rgba(255, 255, 255, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(15px);
+border-radius: 15px 0 0 15px;
+}
+
+.img-container {
+display: flex;
+justify-content: space-evenly;
+width: 300px;
+}
+
+.img-exp { 
+width: 80px;
+margin-top: 0.6em;
+}
+
+.desc-container {
+margin-top: 1.8em;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 15px;
+color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .img-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+    }
+    .cv-container {
+        margin-left: 3.5em
+    }
+    .return-arrow {
+        margin-left: 0em;
+        margin-top: 0em;
+    }
+    .cv-logo-arrow {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5em;
+    }
+    .my-cv-logo {
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .img-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+    .cv-container {
+        margin-left: 6em
+    }
+    .return-arrow {
+        margin-left: 0em;
+        margin-top: 0em;
+    }
+    .cv-logo-arrow {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5em;
+    }
+    .my-cv-logo {
+        width: 90px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .img-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+    .img-exp { 
+        width: 100px;
+        margin-top: 0.8em;
+        }
+    .cv-container {
+        margin-left: 6em
+    }
+    .return-arrow {
+        margin-left: 0em;
+        margin-top: 0em;
+    }
+    .my-cv-logo {
+        width: 100px;
+    }
+    .cv-backcard {
+        width: 100%;
+        height: 125px;
+        margin-top: 0.8em;
+    }
+    .desc-container {
+        margin-top: 3.5em;
+    }
+    .cv-logo-arrow {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5em;
+    }
+    .cv-jobskills-container {
+        margin-top: 6em;
+    }
+}
+/****************
+JOB DETAILS
+****************/
+.JobDetail-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.JobDetail-header-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.back-arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-arrow{
+transform: rotate(180deg);
+height: 20px;
+}
+
+.nft-image-lg{
+    margin: 0 auto;
+    margin-top: 1.5em;
+    width: 220px;
+    height: 230px;
+    border-radius:100% ;
+}
+
+.logo-container {
+    margin-right: 6em;
+}
+
+.JobDetail-logo {
+    width: 94px;
+    height: 92px;
+}
+
+.JobDetails-bottom {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.JobDescription-text{
+flex:1;
+font-style: normal;
+font-weight: 900;
+font-size: 27px;
+line-height: 29px;
+text-align: left;
+}
+
+.JobDetail-bottom-section{
+    margin-top: 1em;
+}
+
+.JobDescription-card{
+    min-height: 370px;
+    background: rgba(255, 255, 255, 0.10000000149011612);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+    }
+    
+
+.JobDescription-card2{
+    width: 100%;;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.10000000149011612);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+}
+
+.JobDescription-text2{
+    width: 234px;
+    height: 29px;
+    left: 28px;
+    top: 600px;
+    position: absolute;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.JobDescription-text3{
+    width: 234px;
+    height: 29px;
+    left: 28px;
+    top: 12px;
+    position: absolute;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis; 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 22px;
+    text-align: left;
+}
+
+
+@media screen and (min-width: 768px) {
+    .JobDetail-container {
+        width: 85%;
+    }
+    .JobDetail-header-section {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .JobDetail-container {
+        width: 80%;
+    }
+    .JobDetail-header-section {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .JobDetail-container {
+        width: 60%;
+    }
+    .JobDetail-header-section {
+        width: 75%;
+    }
+}
